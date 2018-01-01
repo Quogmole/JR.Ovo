@@ -11,7 +11,7 @@
 </div>
 <div>
     <h2>Search by ID</h2>
-    <input type="text" id="id" size="5"/>
+    <input type="text" id="id" size="32"/>
     <input type="button" value="Search" onclick="find();"/>
     <p id="customer"/>
 </div>
@@ -30,14 +30,12 @@
                         function(key, item) {
                             // Add a list item for the customer.
                             $('<li>', { text: formatItem(item) }).appendTo($('#customers'));
-
-                            //TODO: Extend list to get more data shown
                         });
                 });
         });
 
     function formatItem(item) {
-        return item.FirstName + ' ' + item.LastName;
+        return item.Title + ' ' + item.FirstName + ' ' + item.LastName + ' (' + item.Gender + ') | ' + item.Id;
     }
 
     function find() {

@@ -1,5 +1,9 @@
-﻿namespace JR.Ovo.Web.Models
+﻿/// <summary>
+/// Model representing a Customer
+/// </summary>
+namespace JR.Ovo.Web.Models
 {
+
     public class Customer
     {
         public string Id { get; set; }
