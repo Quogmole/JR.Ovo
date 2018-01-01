@@ -18,7 +18,7 @@ namespace JR.Ovo.Web
                 "DefaultApi",
                 "api/{controller}/{id}",
                 new {id = RouteParameter.Optional}
-                );
+            );
 
             var container = new UnityContainer();
             container.RegisterType<IApiService, ApiService>(new HierarchicalLifetimeManager());

@@ -4,7 +4,7 @@ using System.Net.Http;
 namespace JR.Ovo.Services
 {
     /// <summary>
-    /// Service to access the Ovo api
+    ///     Service to access the Ovo api
     /// </summary>
     /// <seealso cref="JR.Ovo.Services.IApiService" />
     // ReSharper disable once ClassNeverInstantiated.Global
@@ -13,7 +13,7 @@ namespace JR.Ovo.Services
         private const string Url = "https://sheltered-depths-66346.herokuapp.com/customers"; //TODO: Add to config file
 
         /// <summary>
-        /// Gets all customers.
+        ///     Gets all customers.
         /// </summary>
         /// <returns></returns>
         public string GetAllCustomers()
@@ -22,7 +22,7 @@ namespace JR.Ovo.Services
         }
 
         /// <summary>
-        /// Gets the customer request.
+        ///     Gets the customer request.
         /// </summary>
         /// <returns></returns>
         private static string CustomerRequest()

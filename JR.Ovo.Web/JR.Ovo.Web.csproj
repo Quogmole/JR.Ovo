@@ -157,6 +157,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="README.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -180,9 +181,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\JR.Ovo.Web.Services\JR.Ovo.Services.csproj">
       <Project>{EC7AC49A-AEF9-4DF4-AA7A-DEC7215D67A7}</Project>

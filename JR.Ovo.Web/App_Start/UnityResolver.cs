@@ -12,10 +12,7 @@ namespace JR.Ovo.Web
 
         public UnityResolver(IUnityContainer container)
         {
-            if (container == null)
-            {
-                throw new ArgumentNullException(nameof(container));
-            }
+            if (container == null) throw new ArgumentNullException(nameof(container));
             _container = container;
         }
 
