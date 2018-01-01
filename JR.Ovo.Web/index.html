@@ -38,7 +38,11 @@
         });
 
     function formatItem(item) {
-        return item.Title + ' ' + item.FirstName + ' ' + item.LastName + ' (' + item.Gender + ') | ' + item.Id;
+        if (item !== null && item !== undefined && item.LastName != undefined) {
+            return item.Title + ' ' + item.FirstName + ' ' + item.LastName + ' (' + item.Gender + ') | ' + item.Id;
+        }
+
+        return 'Error: Not Found';
     }
 
     function find() {
