@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="JR.Ovo.Web.Global" Language="C#" %>
